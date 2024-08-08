@@ -1,0 +1,61 @@
+// karliKingAlexander/frontend/src/styles/main.scss
+// Import Variables & Mixins
+@import 'variables';
+@import 'mixins';
+
+// Import Bootstrap
+
+// Import Fonts
+@import '../assets/fonts/googleFonts.scss';
+
+// Import Components
+@import '../core/components/footer/footer.scss';
+@import '../core/components/header/header.scss';
+@import '../core/components/logo/logo.scss';
+@import '../core/components/profilePicture/profilePicture.scss';
+
+// Import Modules
+@import '../modules/hobbies/pages/hobbies.scss';
+@import '../modules/home/pages/home.scss';
+@import '../modules/pdh/pages/pdh.scss';
+@import '../modules/projects/pages/projects.scss';
+@import '../modules/resume/pages/resume.scss';
+
+// Global Styles
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $body-color;
+  background-color: $body-bg;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+// media queries
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: $body-color;
+    background-color: $body-bg;
+  }
+
+  a:hover {
+    color: $body-color;
+  }
+
+  button {
+    background-color: $body-bg;
+  }
+}

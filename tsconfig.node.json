@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node", "babel__core", "babel__generator", "babel__template", "babel__traverse", "estree", "prop-types", "react", "react-dom"]
+  },
+  "include": ["vite.config.ts"]
+}
