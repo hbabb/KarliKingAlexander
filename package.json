@@ -4,18 +4,23 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --check .",
     "format": "prettier --write .",
     "lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "dev": "vite",
     "build": "vite build",
-    "postcss": "postcss src/styles/global.css -o dist/styles.css",
+    "postcss": "postcss src/styles/global.scss -o dist/styles.scss",
     "preview": "vite preview",
     "start": "serve -s dist",
     "clean": "rm -rf dist",
     "analyze": "vite build --mode analyze"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
