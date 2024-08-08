@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Misc files
+Notes.md
+TODO.md
+.env
