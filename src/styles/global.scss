@@ -1,54 +1,62 @@
 // karliKingAlexander/frontend/src/styles/main.scss
 // Import Variables & Mixins
-@import 'variables';
-@import 'mixins';
-
+@import "variables";
+@import url("mixins");
 // Import Bootstrap
-
 // Import Fonts
-@import '../assets/fonts/googleFonts.scss';
-
+@import "../assets/fonts/googleFonts.scss";
 // Import Components
-@import '../core/components/footer/footer.scss';
-@import '../core/components/header/header.scss';
-@import '../core/components/logo/logo.scss';
-@import '../core/components/profilePicture/profilePicture.scss';
-
+@import "../core/components/footer/footer.scss";
+@import url("../core/components/header/header.scss");
+@import url("../core/components/logo/logo.scss");
+@import url("../core/components/profilePicture/profilePicture.scss");
 // Import Modules
-@import '../modules/hobbies/pages/hobbies.scss';
-@import '../modules/home/pages/home.scss';
-@import '../modules/pdh/pages/pdh.scss';
-@import '../modules/projects/pages/projects.scss';
-@import '../modules/resume/pages/resume.scss';
+@import "../modules/hobbies/styles/hobbies.scss";
+@import url("../modules/home/styles/home.scss");
+@import url("../modules/pdh/styles/pdh.scss");
+@import url("../modules/projects/styles/projects.scss");
+@import url("../modules/resume/styles/resume.scss");
 
 // Global Styles
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: $body-color;
   background-color: $body-bg;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color: $body-color;
+  color-scheme: light dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
-  background-color: $body-bg;
-  color: $body-color;
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.page-body {
+  display: flex;
+  flex-grow: 1;
 }
 
 // media queries
 @media (prefers-color-scheme: dark) {
   :root {
-    color: $body-color;
     background-color: $body-bg;
+    color: $body-color;
   }
 
   a:hover {

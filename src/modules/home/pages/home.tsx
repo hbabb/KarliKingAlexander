@@ -2,12 +2,11 @@
 // TODO: Refactor this for a permanent page
 
 import React from 'react';
-import '../styles/home.scss';
 
 /** @type {Home} */
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className='page-body'>
       <h1>Home</h1>
     </div>
   );

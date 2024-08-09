@@ -5,7 +5,7 @@ import path from 'node:path'
 import react from '@vitejs/plugin-react'
 import autoprefixer from 'autoprefixer'
 import { defineConfig } from 'vite'
-import EnvironmentPlugin from 'vite-plugin-environment'
+// import EnvironmentPlugin from 'vite-plugin-environment'
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname)
 
@@ -13,7 +13,9 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname)
 export default defineConfig({
   plugins: [
     react(),
-    EnvironmentPlugin(['all']),
+    // EnvironmentPlugin([
+    //   all: true
+    // ]),
   ],
   resolve: {
     alias: {

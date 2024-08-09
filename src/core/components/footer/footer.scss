@@ -1,0 +1,40 @@
+/* karlKingAlexander/frontend/src/core/components/footer/footer.scss */
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer-wrapper {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.construction {
+  color: red;
+  font-style: italic;
+}
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.social-icons a {
+  color: darkblue;
+  font-size: x-large;
+  text-decoration: none;
+}
