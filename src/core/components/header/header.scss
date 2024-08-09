@@ -1,0 +1,31 @@
+/* karliKingAlexander/frontend/src/core/components/header/header.scss */
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+}
+
+.nav-menu-list {
+  display: flex;
+  gap: 10rem;
+}
+
+.nav-menu-link {
+  color: darkblue;
+  font-family: roboto, sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+  padding: 0.5rem;
+  text-decoration: none;
+
+  &:hover {
+    color: darkred;
+    text-decoration: underline;
+  }
+}
